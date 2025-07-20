@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashwini | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- header -->
+  <header>
+  <nav class="navbar">
+    <!--<div class="logo">Ashwini</div>--->
+    
+    <!-- Normal Navigation -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+</header>
+
+
+  <!-- Hero Section -->
+ <section class="hero">
+  <img src="images/profile.jpg" alt="Ashwini Profile">
+  <h1>Hi, I'm Ashwini Daware</h1>
+  <h3>A passionate Developer skilled in<span class="highlight"> PHP, C, C++ & Java</span></h3><br>  
+  <p><center>
+   To work with an organization where i contribute my technical skills and grow within a dynamic organization 
+   that values innovation and continuous learning.
+  </p><br>
+<div class="social-icons">
+  <a href="https://github.com/dawareashwini" target="_blank" title="GitHub">
+    <img src="images/github-icon.png" alt="GitHub" />
+  </a>
+  <a href="https://wa.me/7709422664?text=Hi%20Ashwini%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20connect." target="_blank" title="Message">
+  <img src="images/message.png" alt="Message" />
+</a>
+  <a href="mailto:ashwinidaware80@gmail.com?subject=Regarding%20your%20portfolio&body=Hi%20Ashwini%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" title="Email">
+  <img src="images/email.png" alt="Email" />
+</a>
+  <a href="https://www.linkedin.com/in/ashwini-daware-a1191a229/" target="_blank" title="LinkedIn">
+    <img src="images/linkedin-icon.png" alt="LinkedIn" />
+  </a>
+  <a href="https://instagram.com/daware.ashu" target="_blank" title="Instagram">
+    <img src="images/instagram-icon.png" alt="Instagram" />
+  </a>
+  <a href="resume/ashwini-resume.pdf" download class="download-btn">Download CV</a>
+
+</div>
+</section>
+
+
+  <!-- About Section -->
+ <section id="about" class="about-section">
+  <h2>About Me</h2>
+
+  <div class="about-text">
+    <h3>Software Developer</h3>
+    <p id="about-short">
+      I am a passionate Developer with hands-on internship experience in Core PHP.
+      <span id="dots">...</span>
+    </p>
+    <p id="about-full" style="display: none;">
+      And to upskill myself, I did Full Stack Java Developer course from Edubridge India. I am proficient in C, C++, and Java.
+      I am looking to start a career as an entry-level software developer with a reputed firm driven by technology.
+      I enjoy solving real-world coding challenges. With a continuous learning mindset, I’m dedicated to growing
+      as a developer and contributing meaningfully to innovative projects and organizations. Outside of tech, I love to dance.
+    </p>
+    <button onclick="toggleReadMore()" class="read-more-btn">Read More</button>
+  </div>
+
+  <div class="about-image-container">
+    <img src="images/profile.jpg" alt="Ashwini" class="about-image" />
+  </div>
+</section>
+
+<!-- Education section  -->
+<section id="education">
+  <h2 class="section-title">My <span>Education</span></h2>
+  <div class="education-container">
+
+    <!-- Card 1 -->
+    <div class="education-card">
+      <h3>Secondary School Certificate (SSC)</h3>
+      <p>Janta Vidyalay School, Konambe, Sinnar<br>2016</p>
+      <button class="read-more" onclick="openModal('modal1')">Read More</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="education-card">
+      <h3>Higher Secondary Certificate (HSC)</h3>
+      <p>GMD Arts BW commerce & Science College<br>Sinnar 2018</p>
+      <button class="read-more" onclick="openModal('modal2')">Read More</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="education-card">
+      <h3>Bachelor in Computer Science (BCS)</h3>
+      <p>GMD Arts BW commerce & Science College<br>Sinnar 2021</p>
+      <button class="read-more" onclick="openModal('modal3')">Read More</button>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="education-card">
+      <h3>Master in Computer Science (MCS)</h3>
+      <p>KKW ACS & CS College Saraswatinagar Nashik <br>Nashik 2023</p>
+      <button class="read-more" onclick="openModal('modal3')">Read More</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modals -->
+
+<div class="modal" id="modal1">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h3>SSC - Janta Vidyalay School ,Konambe</h3>
+    <ul>
+      <li>Completed in 2016 from Maharashtra State Board.</li>
+      <li>Participated in science exhibitions and Oratory.</li>
+      <li>Actively participated in school-level science exhibitions and dance competitions.</li>
+      <li>Percentage : 72.80%</li>
+    </ul>
+  </div>
+</div>
+
+<<!-- Modal 2 -->
+<div class="modal" id="modal2">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h3>HSC - GMD Arts BW commerce & Science College,Sinnar</h3>
+    <ul>
+      <li>Completed in 2018 from Maharashtra State Board</li>
+      <li>Enagaged in activities that enhanced my Communication abilities.</li>
+      <li>Participated in Oratory,Won 2nd prize in Oratory competition</li>
+      <li>Percentage : 52.77%</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal" id="modal3">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <h3>BCS - GMD Arts BW commerce & Science College,Sinnar</h3>
+    <ul>
+      <li>Completed in 2021 from SPPU</li>
+      <li>Studied C, C++, PHP, DBMS, Java and Operating Systems</li>
+      <li>Mini-project on Bank Management System in C .</li>
+      <li>Skills Gained: problem-solving, Communication skill.</li>
+      <li>Percentage : 75.90%</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal" id="modal4">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal4')">&times;</span>
+    <h3>MCS - KKW ACS & CS College Saraswatinagar Nashik</h3>
+    <ul>
+      <li>Completed in 2023 from SPPU</li>
+      <li>Key subjects:Web Technologies, MangoDb, Machine learning</li>
+      <li>Built full-stack projects using Core PHP,Jquery,Ajax,Html,CSS & Bootstrap</li>
+      <li>Enthusiastic about cloud and API integration</li>
+      <li>Percentage : 73.89%</li>
+    </ul>
+  </div>
+</div>
+
+
+
+  <!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <h2>💼 My Skills</h2>
+  <div class="skills-container">
+    
+    <div class="skill-card" onclick="toggleSkill(this)">
+      <div class="skill-header">
+        <h3>💻 Programming Languages</h3>
+      </div>
+      <ul class="skill-list">
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+      </ul>
+    </div>
+
+    <div class="skill-card" onclick="toggleSkill(this)">
+      <div class="skill-header">
+        <h3>🌐 Web Development</h3>
+      </div>
+      <ul class="skill-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Core PHP</li>
+      </ul>
+    </div>
+
+    <div class="skill-card" onclick="toggleSkill(this)">
+      <div class="skill-header">
+        <h3>🛠️ Frameworks & Tools</h3>
+      </div>
+      <ul class="skill-list">
+        <li>Bootstrap</li>
+        <li>MySQL</li>
+        <li>Git</li>
+        <li>VS Code</li>
+        <li>Eclipse</li>
+      </ul>
+    </div>
+
+    <div class="skill-card" onclick="toggleSkill(this)">
+      <div class="skill-header">
+        <h3>🤝 Soft Skills</h3>
+      </div>
+      <ul class="skill-list">
+        <li>Problem Solving</li>
+        <li>Teamwork</li>
+        <li>Communication</li>
+        <li>Continuous Learning</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+  <h2>My <span>Projects</span></h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="images/garage.png" alt="Project 1">
+      <div class="project-info">
+        <h3><u>Garage Management System</u></h3>
+        <p>Garage management system for efficient scheduling and resource allocation.
+        	Developed a system for streamlined vehicle scheduling and improved customer service through 
+          automated processes and data management using PHP, MySQL, and A JAX.
+       </p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/your-project2.jpg" alt="Project 2">
+      <div class="project-info">
+        <h3><u>Green Grocer Delivery System</u></h3>
+        <p>Software for managing the ordering and delivery of produce.
+           Established a greengrocer delivery system for efficient ordering and delivery of fresh vegetables 
+           and fruits using Java, Spring Boot, and Angular.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact Section -->
+  <!-- <section id="contact">
+    <h2>Contact</h2>
+    <p>Email me at: <strong>yourname@example.com</strong></p>
+    <div class="social-icons">
+  <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+    <img src="images/github-icon.png" alt="GitHub" />
+  </a>
+  <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
+    <img src="images/linkedin-icon.png" alt="LinkedIn" />
+  </a>
+  <a href="https://instagram.com/yourusername" target="_blank" title="Instagram">
+    <img src="images/instagram-icon.png" alt="Instagram" />
+  </a>
+</div>
+ </section> -->
+ <section id="contact" class="contact-section">
+  <h2>Contact <span>Me</span></h2>
+  <form action="#" method="POST" class="contact-form">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="contact-btn">Send Message</button>
+  </form>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Ashwini. All Rights Reserved.
+  </footer>
+<script src="script.js"></script>
+
+
+
+
+</body>
+</html>
